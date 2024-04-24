@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+body {
+  background-color: rgb(156, 168, 178);
+}
+.wrapper {
+  width: 90%;
+  max-width: 25em;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+.app-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.app-icon {
+  width: 9.37em;
+  padding-bottom: 2rem;
+}
+.app-title {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.app-title img{
+  width: 100%;
+  height: 3rem;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+input#amount {
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #02002c;
+  color: #2c2953;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+input#amount:focus {
+  border-color: #9873fe;
+}
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+select {
+  width: 100%;
+  padding: 0.6em;
+  font-size: 1em;
+  font-weight:600;
+  border-radius: 0.2em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+  background-color: #fa4d4d;
+  color: #ffffff;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+button {
+  font-size: 1em;
+  width: 100%;
+  background-color: #fa4d4d;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0.3em;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 5px 9px #999
+}
+
+button:hover {
+  background-color:  #f86a6a;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #f36ef3;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+#result {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+  color: #100b72;
+  background-color: #fad3d3;
+  padding: 0.8em 0;
+}
+
+@media (max-height: 730px) and (max-width: 600px){
+  .wrapper{
+    width: 85%;
+  }
+  body{
+    overflow: hidden;
+  }
+  .app-icon {
+    width: 6em;
+    padding-bottom: 1rem;
+  }
+  .app-title {
+    font-size: .9em;
+  }
+  
+  .app-title img{
+    width: 100%;
+    height: 1.8rem;
+  }
+
+  input#amount {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.4em;
+    width: 98%;
+  }
+
+  select {
+    padding: 0.4em;
+    font-size: .85em;
+  }
+
+  button {
+    font-size: .85em;
+    margin-top: 1.8em;
+  }
+
+  #result {
+    font-size: .9em;
+    text-align: center;
+    margin-top: 1.5em;
+  }
+  
+  #from-currency-select{
+    width: 70%;
+  }
+
+  #to-currency-select{
+    width: 70%;
+  }
+}

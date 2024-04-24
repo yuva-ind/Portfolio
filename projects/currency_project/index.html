@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="currency.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="app-details">
+        <img src="exchange-money.svg" class="app-icon" />
+        <h1 class="app-title"><img src="heading.png" alt=""></h1>
+      </div>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="1" />
+      <div class="dropdowns">
+        <div class="from">
+        <img src="https://flagsapi.com/US/flat/64.png" />
+        <select id="from-currency-select" name="from"></select>
+        </div>
+        <div class="to">
+          <img src="https://flagsapi.com/IN/flat/64.png" />
+        <select id="to-currency-select" name="to"></select>
+        </div>
+      </div>
+      <button id="convert-button">Convert</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="codes.js"></script>
+    <!-- Script with API Key -->
+    <script src="api-key.js"></script>
+    <!-- Script -->
+    <script src="currency.js"></script>
+  </body>
+</html>
