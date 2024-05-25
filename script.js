@@ -2,6 +2,11 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbars = document.querySelector('.navbar');
 
+cv1.onclick = function(){
+    open('cv/yuvan_cv.pdf')
+    location.href = ('cv/yuvan_cv1.pdf');
+ }
+
 menuIcon.onclick = () =>{
     menuIcon.classList.toggle('bx-x');
     navbars.classList.toggle('active');
