@@ -7,7 +7,6 @@ body {
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background: url("images/certificate-bg.jpeg")no-repeat;
     background-position: center;
     background-size: 130rem;
     opacity: 0.6;
