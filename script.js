@@ -3,8 +3,8 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbars = document.querySelector('.navbar');
 
 cv1.onclick = function(){
-    open('cv/Yuvan_CV2.pdf')
-    location.href = ('cv/yuvan_cv1.pdf');
+    open('cv/Yuvan_CV2.pdf');
+    /* location.href = ('cv/yuvan_cv1.pdf'); */
  }
 
 menuIcon.onclick = () =>{
